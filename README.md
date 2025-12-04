@@ -5,18 +5,42 @@
 
 ## Descrição
 
-O BPK LabMóvel é uma aplicação desenvolvida em Flutter para facilitar o controle de empréstimos de equipamentos em Bibliotecas e/ou laboratórios móveis. O sistema permite o cadastro de usuários, equipamentos, blocos e o gerenciamento dos empréstimos, tornando o processo mais ágil e seguro.
+O **BPK LabMóvel** é uma aplicação multiplataforma desenvolvida em Flutter para facilitar o controle de empréstimos de equipamentos em Bibliotecas e/ou laboratórios móveis. O sistema permite o cadastro de usuários, equipamentos, blocos e o gerenciamento completo dos empréstimos, tornando o processo mais ágil, seguro e eficiente.
 
 ## Funcionalidades
+
 - Cadastro e autenticação de usuários
 - Cadastro de equipamentos e blocos
 - Gerenciamento de empréstimos e devoluções
 - Visualização de histórico de empréstimos
-- Notificações e alertas
 - Interface intuitiva e responsiva
-- Integração com Firebase para autenticação e banco de dados
+- Leitura de QR Code para identificação de equipamentos
+- Geração de relatórios em PDF
+- Seleção e upload de imagens
+- Integração completa com Firebase
 
-## Requisitos
+## Tecnologias Utilizadas
+
+- **Flutter** - Framework multiplataforma
+- **Dart** - Linguagem de programação
+- **Firebase Authentication** - Autenticação de usuários
+- **Cloud Firestore** - Banco de dados NoSQL
+- **Provider** - Gerenciamento de estado
+
+## Principais Dependências
+
+- `firebase_core` - SDK do Firebase
+- `firebase_auth` - Autenticação
+- `cloud_firestore` - Banco de dados
+- `firebase_storage` - Storage de arquivos
+- `provider` - Gerenciamento de estado
+- `qr_code_scanner` / `mobile_scanner` - Leitura de QR Code
+- `printing` / `pdf` - Geração de PDFs
+- `image_picker` / `file_picker` - Seleção de arquivos
+- `url_launcher` - Abertura de URLs
+
+## 📋 Requisitos
+
 - Flutter SDK (versão 3.9.2 ou superior)
 - Dart SDK 
 - Conta no Firebase (para autenticação e banco de dados)
@@ -101,7 +125,40 @@ Execute os testes unitários:
 flutter test
 ```
 
+Para análise de código:
+```bash
+flutter analyze
+```
+
+## Estrutura do Projeto
+
+```
+lib/
+├── firebase_options.dart      # Configurações do Firebase
+├── main.dart                  # Ponto de entrada da aplicação
+├── models/                    # Modelos de dados
+├── providers/                 # Gerenciamento de estado
+├── services/                  # Serviços e lógica de negócio
+├── utils/                     # Utilitários e helpers
+└── views/                     # Interfaces e telas
+    ├── components/            # Componentes reutilizáveis
+    └── pages/                 # Páginas da aplicação
+```
+
 ## Documentação
 
-Consulte o arquivo `docs/MPC.md` para detalhes sobre permissões e regras de uso.
+- Consulte o arquivo `docs/MPC.md` para detalhes sobre permissões e regras de uso
+- Consulte `docs/permissions.yaml` para configuração de permissões
+
+## Autores
+
+- **Ruan Neves** - [@NevesRuan](https://github.com/NevesRuan)
+- **Vitor Calliari** - [@Vitor-Calliari](https://github.com/Vitor-Calliari)
+- **Herick Neumann** - [@Herick Neumann](https://github.com/Cassinokled)
+- **Izadora Morais** - [@Izadora de Morais Weigert](https://github.com/izaweigert)
+- **Maria Konrad** - [@MekoWho](https://github.com/MekoWho)
+
+---
+
+Desenvolvido com ❤️ usando Flutter
 
